@@ -30,5 +30,12 @@ Then open http://localhost:8000. (In Claude Code: the "site" entry in `.claude/l
 ## Publish
 Commit and push to the `main` branch on GitHub. GitHub Pages republishes automatically within a minute or two.
 
+## Domain
+dhbostyn.com is registered (and renewed) at Wix. Its DNS, managed in Wix under Domains → ⋯ → Manage DNS records, points to GitHub Pages:
+- A records for `dhbostyn.com`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- CNAME for `www`: dhbostyn.github.io
+
+The `CNAME` file in this repo tells GitHub Pages to serve the site on dhbostyn.com; don't delete it. HTTPS is enforced in the repo's Pages settings.
+
 ## Not in this repo
 `old-site-archive/` (the recovered Wix site) and `START-PROMPT.md` stay local only (see `.gitignore`). The repo is public, so don't commit anything private.
