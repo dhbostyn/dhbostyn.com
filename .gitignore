@@ -1,0 +1,5 @@
+old-site-archive/
+START-PROMPT.md
+.claude/*
+!.claude/launch.json
+scripts/
